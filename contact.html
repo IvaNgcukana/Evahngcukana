@@ -1,0 +1,55 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Iva Ngcukana — Contact</title>
+<style>
+body {margin:0;font-family:Arial, sans-serif;color:white;background:linear-gradient(135deg,#7c3aed,#06b6d4);}
+header{display:flex;justify-content:space-between;padding:20px;background:rgba(0,0,0,0.2)}
+header a{color:white;text-decoration:none;margin-left:15px;font-weight:bold}
+nav a:hover{text-decoration:underline}
+main{max-width:900px;margin:50px auto;padding:20px;background:rgba(0,0,0,0.2);border-radius:15px}
+h1{font-size:32px;margin-bottom:15px}
+p{line-height:1.6}
+form input, form textarea{width:100%;padding:10px;margin-top:10px;border-radius:10px;border:none}
+form button{margin-top:15px;padding:10px 15px;border-radius:10px;border:none;font-weight:bold;color:white;background:linear-gradient(90deg,#ff2d95,#7c3aed);cursor:pointer}
+form button:hover{opacity:0.9}
+a.external-link{display:inline-block;margin-top:15px;color:#ff2d95;font-weight:bold;text-decoration:underline}
+a.external-link:hover{opacity:0.8}
+footer{text-align:center;padding:15px;margin-top:40px;color:rgba(255,255,255,0.7);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div style="font-weight:bold;font-size:20px">Iva Ngcukana</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="certificates.html">Certificates</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h1>Contact Me</h1>
+<p>If you would like to get in touch for work opportunities or collaborations, please fill out the form below:</p>
+<form onsubmit="event.preventDefault(); submitForm();">
+<input type="text" id="name" placeholder="Your Name" required />
+<input type="email" id="email" placeholder="Your Email" required />
+<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+<a href="https://form.jotform.com/252533287744564" target="_blank" class="external-link">Or submit via JotForm</a>
+</main>
+<footer>© 2025 Iva Ngcukana</footer>
+<script>
+function submitForm(){
+  const name = document.getElementById('name').value;
+  alert('Thank you, ' + name + '! This is a demo contact form. Implement your own backend to send messages.');
+  document.querySelector('form').reset();
+}
+</script>
+</body>
+</html>
