@@ -1,39 +1,60 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iva Ngcukana — Home</title>
 <style>
-body {margin:0;font-family:Arial, sans-serif;color:white;background:linear-gradient(135deg,#7c3aed,#06b6d4);}
-header{display:flex;justify-content:space-between;padding:20px;background:rgba(0,0,0,0.2)}
-header a{color:white;text-decoration:none;margin-left:15px;font-weight:bold}
-nav a:hover{text-decoration:underline}
-main{max-width:900px;margin:50px auto;padding:20px;background:rgba(0,0,0,0.2);border-radius:15px}
-h1{font-size:32px;margin-bottom:15px}
-p{line-height:1.6}
-.btn{display:inline-block;margin-top:15px;padding:10px 15px;border-radius:10px;border:none;font-weight:bold;color:white;background:linear-gradient(90deg,#ff2d95,#7c3aed);cursor:pointer;text-decoration:none}
-.btn:hover{opacity:0.9}
-footer{text-align:center;padding:15px;margin-top:40px;color:rgba(255,255,255,0.7);font-size:13px}
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0d0f2e, #3c0e78);
+    overflow: hidden;
+  }
+  .hero {
+    text-align: left;
+    max-width: 900px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+    font-family: 'Orbitron', sans-serif; /* futuristic style */
+  }
+  p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #d1d1ff;
+  }
+  /* subtle background shapes */
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    animation: float 15s infinite ease-in-out;
+  }
+  .shape1 { width: 200px; height: 200px; top: 20%; left: 10%; }
+  .shape2 { width: 300px; height: 300px; bottom: 15%; right: 5%; }
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(30px); }
+    100% { transform: translateY(0px); }
+  }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<div style="font-weight:bold;font-size:20px">Iva Ngcukana</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
-<main>
-<h1>Business Analyst & IT Support Professional</h1>
-<p>I am a passionate and driven early-career professional with a Diploma in ICT specializing in Business Analysis and practical experience gained through IT Support Associate Learnership. My expertise includes Technical Support Fundamentals, computer networking, operating systems, system administration, IT infrastructure, and cybersecurity. I am currently focused on growing in IT Support, as it allows me to see firsthand how technology impacts business operations and user experience, while also strengthening my analytical and problem-solving skills through user support and troubleshooting. At the same time, I remain deeply interested in how data, automation, and machine learning can solve real-world problems and improve business efficiency, with the long-term goal of bridging business and technology in roles such as IT Support, data analysis, AI product support, or solution development.</p>
-<p><strong>Skills:</strong> Troubleshooting Hardware & Software, Windows Installation, Ticketing System, Team Collaboration, Data Analysis, Data Visualization, Business Process Modelling, Web and Application Software Testing.</p>
-<a href="projects.html" class="btn">View Projects</a>
-</main>
-<footer>© 2025 Iva Ngcukana</footer>
+<div class="hero">
+  <h1>IVA NGCUKANA</h1>
+  <p>IT Support Intern | Business Analyst | IT Specialist</p>
+</div>
+<div class="shape shape1"></div>
+<div class="shape shape2"></div>
 </body>
 </html>
